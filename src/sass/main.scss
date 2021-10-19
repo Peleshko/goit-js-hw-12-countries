@@ -1,7 +1,111 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+$pink: #DC143C;
+$white: #f6f4f3;
+$dark: #008B8B;
+$silk: #FFF8DC;
+$violet: #9932CC;
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 10px; 
+    color: $pink;
+    background: $silk;
+  }
+  
+  .countries-list {
+    border: 1px solid $dark;
+    width: 300px;
+  }
+  
+  .countries-list__image {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .countries-list__item {
+    font-family: inherit;
+    line-height: 1.5;
+    cursor: pointer;
+    color: $violet;
+    list-style-type: disc;
+  }
+  
+  .countries-list__item:hover {
+    color: $dark;
+    list-style-type: square;
+  }
+  
+  .card {
+    max-width: 900px;
+  }
+  
+  .wrapper--flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  
+    padding: 1em;
+  }
+  
+  .description {
+    margin-right: 50px;
+  }
+  
+  .card-name {
+    text-align: start;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  input {
+    width: 300px;
+    height: 60px;
+  
+    padding: 1em;
+    margin-right: 1em;
+  
+   
+    font-weight: 700;
+    color: $violet;
+    background-color: $silk;
+  
+    border: 1px solid $dark;
+    border-radius: 10px;
+  }
+  
+  
+  .card-name,
+  .text {
+    margin: 0;
+    color: $dark;
+  }
+  
+  .text {
+    padding-top: 10px;
+  }
+  
+  .text-wrapper {
+    color: $violet;
+  }
+  
+  .text-wrapper.text__timezones {
+    display: block;
+  }
+  
+  h1 {
+    text-align: center;
+    color: $violet;
+  }
+  
+  .label {
+    text-align: center;
+  }
