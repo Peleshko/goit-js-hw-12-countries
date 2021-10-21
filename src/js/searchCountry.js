@@ -38,7 +38,7 @@ function onSearch() {
   }
   
   function onClearCountry() {
-      inputNameCountry.value = '';
+     // inputNameCountry.value = '';
       containerCountries.innerHTML = '';
   }
   
